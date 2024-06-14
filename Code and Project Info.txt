@@ -1,0 +1,17 @@
+Project Overview
+The focus of the project and code is to predict/classify nodes in a graph as either 'republican' or 'democratic'
+
+The graph itself was constructed from new york times article keywords (over 3 months preceding 2020 election):
+	Nodes represent a given keyword
+	Edges represent two keywords being present in the same article
+Many of the keywords refer to American politicians who were then labelled by cross-referencing a goverment database
+
+Two methods were attempted to classify graph nodes in a semi-supervised manner: GraphSAGE and a harmonic function
+This had the aim of not just classifying politicians but other keywords as well to investigate interesting relationships
+
+Code Overview
+Two notebooks have been submitted:
+	get_nyt_data contains the code used for pulling keywords and politician labels as well as constructing the adjacency matrix and node dataframe
+	COMP4222 contains the code for the two approaches described above and makes use of data generated from first notebook
+
+Note: The graph data generated from the first notebook is quite large (approx. 2gb) so has not been included in this upload
